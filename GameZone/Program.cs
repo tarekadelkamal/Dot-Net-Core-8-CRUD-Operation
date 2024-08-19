@@ -17,6 +17,7 @@ builder.Services.AddScoped<ICategoriesService, CategoriesService>();
 builder.Services.AddScoped<IDevicesService, DevicesService>();
 builder.Services.AddScoped<IGamesService, GameService>();
 builder.Services.AddScoped<IGame, GamesRepo>();
+builder.Services.AddScoped<IUploadFile, UploadFileService>();
 
 var app = builder.Build();
 

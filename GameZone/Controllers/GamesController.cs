@@ -91,28 +91,14 @@ namespace GameZone.Controllers
         }
 
         [HttpPost, ValidateAntiForgeryToken]
-        public IActionResult Edit(EditGameFormVM model)
+        public async Task<IActionResult> Edit(EditGameFormVM model)
         {
 
             if (ModelState.IsValid)
             {
-                var  hasNewCover = model.Cover ;
-                var oldCover = model.CurrentCover;
-
-                if (hasNewCover is not null)
-                {
-                    model.Cover = model.Cover;
-                }
-                else
-                {
-                    model.Cover = null;
-                }
                 
-                var result = gameRepo.Update(model);
-               /* if(result.Cover is not null )
-                {
-                    UploadFileService.UploadFile(model.Cover);
-                }*/
+               await gamesService.Update(model);
+             
                 return RedirectToAction("Index");
             }
 

@@ -38,12 +38,12 @@ namespace GameZone.Repository
                 .SingleOrDefault(x => x.Id == detsId);
         }
 
-        public Game? Update(EditGameFormVM model)
+        public Game? Update(Game game)
         {
-            Game game = _dbContext.Games.Include(d => d.Devices)
-                .SingleOrDefault(s => s.Id == model.Id);
+            
+           /* Game game = this.FindGame(model.Id);
 
-            if(game is null)
+            if (game is null)
                 return null;
 
             game.Name = model.Name;
@@ -58,8 +58,19 @@ namespace GameZone.Repository
 
             var effected_rows = _dbContext.SaveChanges();
 
-            return  (effected_rows > 0) ?  game :  null;
+            return  (effected_rows > 0) ?  game :  null;*/
 
+            _dbContext.Games.Update(game);
+            var effected_rows =  _dbContext.SaveChanges();
+            return (effected_rows > 0) ? game : null;
+            
+
+        }
+
+        public Game? FindGame(int Id)
+        {
+           return _dbContext.Games.Include(d => d.Devices)
+                .SingleOrDefault(s => s.Id == Id);
         }
     }
 }

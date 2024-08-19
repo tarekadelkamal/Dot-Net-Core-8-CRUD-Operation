@@ -251,3 +251,4 @@ F:\GameZone\GameZone\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Drawing.Com
 F:\GameZone\GameZone\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Security.Cryptography.ProtectedData.dll
 F:\GameZone\GameZone\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Windows.Extensions.dll
 F:\GameZone\GameZone\bin\Debug\net8.0\libman.json
+F:\GameZone\GameZone\obj\Debug\net8.0\GameZone.sourcelink.json

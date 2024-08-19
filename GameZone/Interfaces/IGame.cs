@@ -9,6 +9,7 @@ namespace GameZone.Interfaces
         public  Task AddGameAsync(Game game);
         public IEnumerable<Game> GetAllGames();
         public Game? GetDetsils(int detsId);
-        public Game? Update(EditGameFormVM model);
+        public Game? Update(Game game);
+        public Game? FindGame(int Id);
     }
 }

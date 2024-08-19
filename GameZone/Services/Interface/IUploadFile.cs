@@ -4,6 +4,6 @@ namespace GameZone.Services.Interface
 {
     public interface IUploadFile
     {
-        public void UploadFile(EditGameFormVM fileName);
+        public  Task<string> UploadFile(IFormFile cover);
     }
 }

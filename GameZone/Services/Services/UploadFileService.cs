@@ -1,4 +1,5 @@
-﻿using GameZone.Services.Interface;
+﻿using GameZone.Configurations;
+using GameZone.Services.Interface;
 using GameZone.ViewModels;
 namespace GameZone.Services.Services
 {
@@ -9,15 +10,16 @@ namespace GameZone.Services.Services
         public UploadFileService(IWebHostEnvironment webHostEnvironment)
         {
             _environment = webHostEnvironment;
-            _Gameimage = $"{_environment.WebRootPath}/assets/images/games";
+            _Gameimage = $"{_environment.WebRootPath}{FileSettings.ImagePath}";
         }
-        public void UploadFile(EditGameFormVM fileName)
+        public async Task<string> UploadFile(IFormFile cover)
         {
-           /* var CoverName = $"{Guid.NewGuid()}{Path.GetExtension(fileName.FileName)}";
+            string CoverName = $"{Guid.NewGuid()}{Path.GetExtension(cover.FileName)}";
             var path = Path.Combine(_Gameimage, CoverName);
             using var stream = File.Create(path);
-            fileName.CopyTo(stream);
-            stream.Dispose();*/
+            await cover.CopyToAsync(stream);
+            stream.Dispose();
+            return CoverName;
         }
     }
 }
