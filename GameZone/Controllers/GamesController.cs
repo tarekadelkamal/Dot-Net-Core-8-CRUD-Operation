@@ -96,12 +96,9 @@ namespace GameZone.Controllers
 
             if (ModelState.IsValid)
             {
-                
                await gamesService.Update(model);
-             
                 return RedirectToAction("Index");
             }
-
             return View("Edit", model);
         }
     }

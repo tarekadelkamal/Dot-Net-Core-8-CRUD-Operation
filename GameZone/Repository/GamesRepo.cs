@@ -40,31 +40,9 @@ namespace GameZone.Repository
 
         public Game? Update(Game game)
         {
-            
-           /* Game game = this.FindGame(model.Id);
-
-            if (game is null)
-                return null;
-
-            game.Name = model.Name;
-            game.Description = model.Description;
-            game.Devices = model.SelectedDevices.Select(d => new DeviceGame { DeviceId = d }).ToList();
-            game.CategoryId = model.CategoryId;
-
-            if (model.Cover is not null)
-            {
-                game.Cover = model.Cover.ToString();
-            }
-
-            var effected_rows = _dbContext.SaveChanges();
-
-            return  (effected_rows > 0) ?  game :  null;*/
-
             _dbContext.Games.Update(game);
             var effected_rows =  _dbContext.SaveChanges();
             return (effected_rows > 0) ? game : null;
-            
-
         }
 
         public Game? FindGame(int Id)

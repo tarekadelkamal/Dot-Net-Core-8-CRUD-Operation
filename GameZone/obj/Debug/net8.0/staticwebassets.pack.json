@@ -5,16 +5,20 @@
       "PackagePath": "staticwebassets\\GameZone.bundle.scp.css"
     },
     {
-      "Id": "F:\\GameZone\\GameZone\\wwwroot\\assets\\images\\games\\a09c3208-9de1-45d8-b87e-2c187c42dabf.jpg",
-      "PackagePath": "staticwebassets\\assets\\images\\games\\a09c3208-9de1-45d8-b87e-2c187c42dabf.jpg"
+      "Id": "F:\\GameZone\\GameZone\\wwwroot\\assets\\images\\games\\0b7d417b-a940-42de-8082-943fa90a33c4.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\games\\0b7d417b-a940-42de-8082-943fa90a33c4.jpg"
+    },
+    {
+      "Id": "F:\\GameZone\\GameZone\\wwwroot\\assets\\images\\games\\19fa8dd2-8b82-4782-b3c8-690990e9f655.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\games\\19fa8dd2-8b82-4782-b3c8-690990e9f655.jpg"
+    },
+    {
+      "Id": "F:\\GameZone\\GameZone\\wwwroot\\assets\\images\\games\\35c30395-9213-4105-810e-678ab24dfd8c.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\games\\35c30395-9213-4105-810e-678ab24dfd8c.jpg"
     },
     {
       "Id": "F:\\GameZone\\GameZone\\wwwroot\\assets\\images\\games\\ae0b0de8-f10d-4b9f-9dfb-07ddb5141362.jpg",
       "PackagePath": "staticwebassets\\assets\\images\\games\\ae0b0de8-f10d-4b9f-9dfb-07ddb5141362.jpg"
-    },
-    {
-      "Id": "F:\\GameZone\\GameZone\\wwwroot\\assets\\images\\games\\d9f1b1a7-22e6-4763-874a-e075dda6bdb3.jpg",
-      "PackagePath": "staticwebassets\\assets\\images\\games\\d9f1b1a7-22e6-4763-874a-e075dda6bdb3.jpg"
     },
     {
       "Id": "F:\\GameZone\\GameZone\\wwwroot\\css\\bootstrap.min.css",

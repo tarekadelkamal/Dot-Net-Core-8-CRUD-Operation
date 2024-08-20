@@ -7,7 +7,5 @@ namespace GameZone.Services.Interface
     {
         public Task Create(CreateGameVM model);
         public Task Update(EditGameFormVM model);
-
-       // public IEnumerable<Game> GetAll();
     }
 }

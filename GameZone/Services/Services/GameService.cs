@@ -41,9 +41,7 @@ namespace GameZone.Services.Services
 
         public async Task Update(EditGameFormVM model)
         {
-
             Game game = _GameRepo.FindGame(model.Id);
-            
             game.Name = model.Name;
             game.Description = model.Description;
             game.Devices = model.SelectedDevices.Select(d => new DeviceGame { DeviceId = d }).ToList();
@@ -53,11 +51,8 @@ namespace GameZone.Services.Services
             {
                 var OldCover = Path.Combine(_Gameimage, model.CurrentCover);
                 File.Delete(OldCover);
-
                 game.Cover = await _UploadFile.UploadFile(model.Cover);
-                
             }
-
             _GameRepo.Update(game);
  
         }
