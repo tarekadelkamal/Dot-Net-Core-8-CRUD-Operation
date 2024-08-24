@@ -11,5 +11,6 @@ namespace GameZone.Interfaces
         public Game? GetDetsils(int detsId);
         public Game? Update(Game game);
         public Game? FindGame(int Id);
+        public void Delete(int id);
     }
 }

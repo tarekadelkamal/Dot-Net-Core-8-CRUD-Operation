@@ -50,5 +50,14 @@ namespace GameZone.Repository
            return _dbContext.Games.Include(d => d.Devices)
                 .SingleOrDefault(s => s.Id == Id);
         }
+
+        public void Delete(int id)
+        {
+            var oldGame = _dbContext.Games.FirstOrDefault(x => x.Id == id);
+             _dbContext.Games.Remove(oldGame);
+            _dbContext.SaveChanges();
+
+
+        }
     }
 }

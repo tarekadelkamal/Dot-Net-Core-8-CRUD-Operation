@@ -101,5 +101,11 @@ namespace GameZone.Controllers
             }
             return View("Edit", model);
         }
+
+        public IActionResult Delete(int id)
+        {
+              gameRepo.Delete(id);
+            return RedirectToAction("index");
+        }
     }
 }
