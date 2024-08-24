@@ -104,7 +104,9 @@ namespace GameZone.Controllers
 
         public IActionResult Delete(int id)
         {
-              gameRepo.Delete(id);
+              var res = gameRepo.Delete(id);
+            if (res is null)
+                return NotFound();
             return RedirectToAction("index");
         }
     }

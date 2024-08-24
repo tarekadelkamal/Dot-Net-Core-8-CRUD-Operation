@@ -51,13 +51,12 @@ namespace GameZone.Repository
                 .SingleOrDefault(s => s.Id == Id);
         }
 
-        public void Delete(int id)
+        public Game Delete(int id)
         {
             var oldGame = _dbContext.Games.FirstOrDefault(x => x.Id == id);
              _dbContext.Games.Remove(oldGame);
-            _dbContext.SaveChanges();
-
-
+            var rows = _dbContext.SaveChanges();
+            return (rows > 0) ? oldGame : null;
         }
     }
 }
