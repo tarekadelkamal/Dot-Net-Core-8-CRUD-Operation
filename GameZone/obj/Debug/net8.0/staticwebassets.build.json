@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "LF42UCJ7ETyBCjpkX1z8z8Ix1KjZqSV3mqdLuFzGyNs=",
+  "Hash": "0ksCrtce7pJZ8wNT3VDdQ8f1vWsht+MZ3gMJjrEL49M=",
   "Source": "GameZone",
   "BasePath": "_content/GameZone",
   "Mode": "Default",
@@ -110,6 +110,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\assets\\images\\games\\35c30395-9213-4105-810e-678ab24dfd8c.jpg"
+    },
+    {
+      "Identity": "F:\\GameZone\\GameZone\\wwwroot\\assets\\images\\games\\a12bb8d4-2da0-4aa2-a45e-2d7fab94e805.jpg",
+      "SourceId": "GameZone",
+      "SourceType": "Discovered",
+      "ContentRoot": "F:\\GameZone\\GameZone\\wwwroot\\",
+      "BasePath": "_content/GameZone",
+      "RelativePath": "assets/images/games/a12bb8d4-2da0-4aa2-a45e-2d7fab94e805.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\images\\games\\a12bb8d4-2da0-4aa2-a45e-2d7fab94e805.jpg"
     },
     {
       "Identity": "F:\\GameZone\\GameZone\\wwwroot\\assets\\images\\games\\ae0b0de8-f10d-4b9f-9dfb-07ddb5141362.jpg",

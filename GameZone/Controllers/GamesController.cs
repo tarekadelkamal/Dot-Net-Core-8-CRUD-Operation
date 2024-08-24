@@ -59,7 +59,7 @@ namespace GameZone.Controllers
             }
             return View("Create", DefualtData);
         }
-        
+        [HttpGet]
         public IActionResult Details(int id)
         {
             var game = gameRepo.GetDetsils(id);
@@ -69,7 +69,7 @@ namespace GameZone.Controllers
             }
             return View( game); 
         }
-
+        [HttpGet]
         public IActionResult Edit(int id)
         {
             var game = gameRepo.GetDetsils(id);
@@ -102,6 +102,7 @@ namespace GameZone.Controllers
             return View("Edit", model);
         }
 
+        [HttpGet]
         public IActionResult Delete(int id)
         {
               var res = gameRepo.Delete(id);

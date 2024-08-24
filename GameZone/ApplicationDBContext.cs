@@ -18,8 +18,6 @@ namespace GameZone
             modelBuilder.ApplyConfiguration(new DeviceConf());
             modelBuilder.ApplyConfiguration(new CategoryConf());
             modelBuilder.ApplyConfiguration(new DeviceGameConf());
-
-          
         }
 
         public DbSet<Game> Games { get; set; }
